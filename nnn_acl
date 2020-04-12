@@ -24,7 +24,7 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 custom_proxy_group=🚁 中继自动`fallback`(中继)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🚀 专线自动`fallback`(IPLC|专线)`http://www.gstatic.com/generate_204`600
-custom_proxy_group=🎥 NETFLIX`fallback`(香港|新加坡)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🎥 NETFLIX`fallback`(香港)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🌍 国外媒体`select`[]🚁 中继自动`[]🚀 专线自动`[]🎯 全球直连`
 custom_proxy_group=📲 电报信息`select`[]🚁 中继自动`[]🚀 专线自动`🎯 全球直连`
 custom_proxy_group=Ⓜ️ 微软服务`select`[]🎯 全球直连`[]🚁 中继自动`[]🚀 专线自动`
