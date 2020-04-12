@@ -5,7 +5,7 @@
 enable_rule_generator=true
 overwrite_original_rules=true
 update_ruleset_on_request=true
-sort_flag=true
+
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 surge_ruleset=🛑 全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
@@ -24,8 +24,8 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 ;设置分组标志位
 
-custom_proxy_group=🚁 中继自动`fallback`(中继)`http://www.gstatic.com/generate_204`500
-custom_proxy_group=🚀 专线自动`fallback`(IPLC|专线)`http://www.gstatic.com/generate_204`500
+custom_proxy_group=🚁 中继自动`fallback`(中继.*苏)`(中继.*沪)`(中继.*鲁)`(中继.*京)`(中继.*深)`http://www.gstatic.com/generate_204`500
+custom_proxy_group=🚀 专线自动`fallback`(专线.*港)`(专线.*新)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=🎥 NETFLIX`fallback`(中继.*港)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=🌍 国外媒体`select`[]🚁 中继自动`[]🚀 专线自动`[]🎯 全球直连`
 custom_proxy_group=📲 电报信息`select`[]🚁 中继自动`[]🚀 专线自动`[]🎯 全球直连`
@@ -39,11 +39,11 @@ custom_proxy_group=🐟 漏网之鱼`select`[]🚁 中继自动`[]🚀 专线自
 ;设置分组标志位
 
 rename_node=(\s*→\s*)@
-rename_node=上海@B沪
-rename_node=北京@C京
-rename_node=深圳@D深
-rename_node=山东@C鲁
-rename_node=江苏@A苏
+rename_node=上海@沪
+rename_node=北京@京
+rename_node=深圳@深
+rename_node=山东@鲁
+rename_node=江苏@苏
 
 rename_node=新加坡@🇸🇬新
 rename_node=韩国@🇰🇷韩
