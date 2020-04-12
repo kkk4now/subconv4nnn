@@ -45,16 +45,16 @@ rename_node=深圳@深
 rename_node=山东@鲁
 rename_node=江苏@苏
 
-rename_node=新加坡@🇸🇬新
-rename_node=韩国@🇰🇷韩
-rename_node=日本@🇯🇵日
-rename_node=美国@🇺🇸美
-rename_node=香港@🇭🇰港
-rename_node=台湾@🇹🇼台
-rename_node=印度@🇮🇳印
-rename_node=英国@🇬🇧英
-rename_node=澳大利亚@🇦🇺澳
-rename_node=德国@🇩🇪德
+rename_node=新加坡@新
+rename_node=韩国@韩
+rename_node=日本@日
+rename_node=美国@美
+rename_node=香港@港
+rename_node=台湾@台
+rename_node=印度@印
+rename_node=英国@英
+rename_node=澳大利亚@澳
+rename_node=德国@德
 
 rename_node=(.*)联通(.*)@$1$2(联通)
 rename_node=(.*)BGP(.*)@$1$2(BGP)
