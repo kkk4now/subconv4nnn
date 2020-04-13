@@ -24,7 +24,7 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 ;设置分组标志位
 
-custom_proxy_group=🚁 中继自动`fallback`(中继.*苏)`(中继.*沪)`(中继.*鲁)`(中继.*京)`(中继.*深)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🚁 中继自动`select`[]🔰 江苏入口`[]🔰 上海入口`[]🔰 山东入口`[]🔰 北京入口`
 custom_proxy_group=🚀 专线自动`fallback`(专线.*港)`(专线.*新)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🎥 NETFLIX`fallback`(中继.*苏港)`(中继.*沪港)`(中继.*京港)`(中继.*鲁港)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🌍 国外媒体`select`[]🚁 中继自动`[]🚀 专线自动`[]🎯 全球直连`
@@ -35,6 +35,11 @@ custom_proxy_group=🎯 全球直连`select`[]DIRECT
 custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
 custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
 custom_proxy_group=🐟 漏网之鱼`select`[]🚁 中继自动`[]🚀 专线自动`[]🎯 全球直连`
+custom_proxy_group=🔰 江苏入口`fallback`(中继.*苏)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🔰 上海入口`fallback`(中继.*苏)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🔰 山东入口`fallback`(中继.*苏)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🔰 北京入口`fallback`(中继.*苏)`http://www.gstatic.com/generate_204`600
+
 
 ;设置分组标志位
 
@@ -62,4 +67,4 @@ rename_node=(.*)三线(.*)@$1$2(三线)
 
 rename_node=((专线|中继|直连|原生转发)\s*)(.*)(🇸🇬|🇰🇷|🇯🇵|🇺🇸|🇭🇰|🇹🇼|🇮🇳|🇬🇧|🇦🇺|🇩🇪)(新|韩|日|美|港|台|印|英|澳|德)(\s*)(.*)@$1$4$3$5$7
 
-exclude_remarks=(韩|转发|台)
+exclude_remarks=(韩|台|印|澳|俄|转发)
