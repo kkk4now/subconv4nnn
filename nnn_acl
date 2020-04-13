@@ -35,10 +35,10 @@ custom_proxy_group=🐟 漏网之鱼`select`[]🚁 中继自动`[]🚀 专线自
 custom_proxy_group=🎯 全球直连`select`[]DIRECT
 custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
 custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
-custom_proxy_group=🔰 江苏入口`fallback`(中继.*苏)`http://www.gstatic.com/generate_204`600
-custom_proxy_group=🔰 上海入口`fallback`(中继.*沪)`http://www.gstatic.com/generate_204`600
-custom_proxy_group=🔰 山东入口`fallback`(中继.*鲁)`http://www.gstatic.com/generate_204`600
-custom_proxy_group=🔰 北京入口`fallback`(中继.*京)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🔰 江苏入口`fallback`(中继.*苏港)`(中继.*苏新)`(中继.*苏日)`(中继.*苏美)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🔰 上海入口`fallback`(中继.*沪港)`(中继.*沪新)`(中继.*沪日)`(中继.*沪美)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🔰 山东入口`fallback`(中继.*鲁港)`(中继.*鲁新)`(中继.*鲁日)`(中继.*鲁美)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🔰 北京入口`fallback`(中继.*京港)`(中继.*京新)`(中继.*京日)`(中继.*京美)`http://www.gstatic.com/generate_204`600
 
 
 ;设置分组标志位
