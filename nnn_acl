@@ -24,7 +24,7 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 ;设置分组标志位
 
-custom_proxy_group=🚁 中继自动`select`[]🔰 江苏入口`[]🔰 其他入口`
+custom_proxy_group=🚁 中继自动`select`[]🔰 HK落地`[]🔰 SG落地`[]🔰 JP落地`
 custom_proxy_group=🚀 专线自动`fallback`(专线.*深港.*02)`(专线.*深港.*03)`(专线.*深港.*04)`(专线.*沪港.*02)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🎥 NETFLIX`fallback`(中继.*沪新)`(中继.*苏新)`(中继.*京新)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=📲 电报信息`fallback`(中继.*苏港)`(中继.*苏新)`(专线.*新)`http://www.gstatic.com/generate_204`600
@@ -35,9 +35,9 @@ custom_proxy_group=🐟 漏网之鱼`select`[]🚁 中继自动`[]🚀 专线自
 custom_proxy_group=🎯 全球直连`select`[]DIRECT
 custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
 custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
-custom_proxy_group=🔰 江苏入口`fallback`(中继.*苏港)`(中继.*苏新)`(中继.*苏日)`http://www.gstatic.com/generate_204`300
-custom_proxy_group=🔰 其他入口`select`(中继((?!苏).)*$)`
-
+custom_proxy_group=🔰 HK落地`fallback`(中继.*港)`http://www.gstatic.com/generate_204`300
+custom_proxy_group=🔰 SG落地`fallback`(中继.*新)`http://www.gstatic.com/generate_204`300
+custom_proxy_group=🔰 JP落地`fallback`(中继.*日)`http://www.gstatic.com/generate_204`300
 
 
 ;设置分组标志位
