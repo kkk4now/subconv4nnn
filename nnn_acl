@@ -24,7 +24,7 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 ;设置分组标志位
 
-custom_proxy_group=🚁 中继自动`select`[]🔰 HK落地`[]🔰 其他落地`
+custom_proxy_group=🚁 中继自动`select`[]🔰 HK落地`[]🔰 其他落地`[]🔰 UPUP`
 custom_proxy_group=🚀 专线自动`fallback`(专线.*深港.*02)`(专线.*深港.*03)`(专线.*深港.*04)`(专线.*沪港.*02)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🎥 NETFLIX`fallback`(中继.*沪新)`(中继.*苏新)`(中继.*京新)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=📲 电报信息`select`[]🎥 NETFLIX`(专线.*新)`
@@ -37,7 +37,7 @@ custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
 custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
 custom_proxy_group=🔰 HK落地`url-test`(中继.*沪港)`(中继.*苏港)`(中继.*鲁港)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=🔰 其他落地`select`(中继((?!港).)*$)`
-
+custom_proxy_group=🔰 UPUP`select`(中继.*UP)`
 
 
 ;设置分组标志位
