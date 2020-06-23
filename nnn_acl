@@ -37,7 +37,7 @@ custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
 custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
 custom_proxy_group=🔰 HK落地`url-test`(中继.*沪港)`(中继.*苏港)`(中继.*鲁港)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=🔰 其他落地`select`(中继((?!港).)*$)`
-custom_proxy_group=🔰 UPUP`select`(中继.*UP)`
+custom_proxy_group=🔰 UPUP`select`(中继.*Pro)`
 
 
 ;设置分组标志位
