@@ -25,10 +25,10 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 ;设置分组标志位
 
 custom_proxy_group=🚁 中继自动`select`[]🚅 HK自动`[]🚄 SG自动`[]🎩 Pro手选`
-custom_proxy_group=🚅 HK自动`fallback`(中继.*Pro.*港)`(中继.*沪港)`(中继.*苏港)`http://www.gstatic.com/generate_204`500
+custom_proxy_group=🚅 HK自动`url_test`(中继.*Pro.*港)`(中继.*沪港)`(中继.*苏港)`(中继.*广港)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=🚄 SG自动`fallback`(中继.*Pro.*新)`(中继.*沪新)`(中继.*苏新)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=🎩 Pro手选`select`(中继.*Pro)`
-custom_proxy_group=🚀 专线自动`fallback`(专线.*深港.*02)`(专线.*深港.*03)`(专线.*深港.*04)`(专线.*沪港.*02)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🚀 专线自动`fallback`(专线.*深港.*05)`(专线.*深港.*06)`(专线.*沪港.*04)`(专线.*沪港.*02)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🎥 NETFLIX`fallback`(中继.*Pro.*新)`(中继.*沪新)`(中继.*苏新)`(中继.*京新)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=📲 电报信息`select`[]🚄 SG自动`(专线.*新)`
 custom_proxy_group=🌍 国外媒体`select`[]🚁 中继自动`[]🚀 专线自动`[]🎯 全球直连`
@@ -52,6 +52,7 @@ rename_node=深圳@深
 rename_node=山东@鲁
 rename_node=江苏@苏
 rename_node=广州@广
+rename_node=广东@广
 rename_node=浙江@杭
 
 rename_node=新加坡@新
@@ -71,4 +72,4 @@ rename_node=(.*)三线(.*)@$1$2(三线)
 
 rename_node=((专线|中继|直连|原生转发)\s*)(.*)(🇸🇬|🇰🇷|🇯🇵|🇺🇸|🇭🇰|🇹🇼|🇮🇳|🇬🇧|🇦🇺|🇩🇪)(新|韩|日|美|港|台|印|英|澳|德)(\s*)(.*)@$1$4$3$5$7
 
-exclude_remarks=(韩|台|印|澳|俄|转发|10Mbp)
+exclude_remarks=(韩|台|印|澳|俄|转发)
