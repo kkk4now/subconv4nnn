@@ -33,8 +33,8 @@ custom_proxy_group=🐟 漏网之鱼`select`[]🔀 中继自动`[]🚀 专线自
 custom_proxy_group=🎯 全球直连`select`[]DIRECT
 custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
 
-# custom_proxy_group=🔰 其他落地`select`(中继((?!港).)*$)`
-# custom_proxy_group=🎩 Pro手选`select`(中继.*Pro)`
+; custom_proxy_group=🔰 其他落地`select`(中继((?!港).)*$)`
+; custom_proxy_group=🎩 Pro手选`select`(中继.*Pro)`
 
 
 ;设置分组标志位
