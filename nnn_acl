@@ -6,17 +6,14 @@ enable_rule_generator=true
 overwrite_original_rules=true
 update_ruleset_on_request=true
 
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
 surge_ruleset=🛑 全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-surge_ruleset=🍃 应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 surge_ruleset=📲 电报信息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-surge_ruleset=Ⓜ️ 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+surge_ruleset=🦄 微软苹果,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+surge_ruleset=🦄 微软苹果,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
 surge_ruleset=🎥 NETFLIX,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list
-surge_ruleset=🍎 苹果服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
 surge_ruleset=🌍 国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 surge_ruleset=🎯 全球直连,[]GEOIP,CN
 surge_ruleset=🐟 漏网之鱼,[]FINAL
@@ -24,23 +21,20 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 ;设置分组标志位
 
-custom_proxy_group=🚁 中继自动`select`[]🚅 HK自动`[]🚄 SG自动`[]🎩 Pro手选`
-custom_proxy_group=🚅 HK自动`fallback`(中继.*广港)`(中继.*Pro.*港)`(中继.*沪港)`(中继.*苏港)`http://www.gstatic.com/generate_204`500
-custom_proxy_group=🚄 SG自动`fallback`(中继.*广新)`(中继.*Pro.*新)`(中继.*沪新)`(中继.*苏新)`http://www.gstatic.com/generate_204`500
-custom_proxy_group=🎩 Pro手选`select`(中继.*Pro)`
+custom_proxy_group=🚁 中继自动`select`[]🇭🇰 HK自动`[]🇸🇬 SG自动`
+custom_proxy_group=🇭🇰 HK自动`fallback`(Light.*港)`(中继.*广港)`(中继.*Pro.*港)`(中继.*沪港)`(中继.*苏港)`http://www.gstatic.com/generate_204`500
+custom_proxy_group=🇸🇬 SG自动`fallback`(Light.*新)`(中继.*广新)`(中继.*Pro.*新)`(中继.*沪新)`(中继.*苏新)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=🚀 专线自动`fallback`(专线.*深港.*05)`(专线.*深港.*06)`(专线.*沪港.*04)`(专线.*沪港.*02)`http://www.gstatic.com/generate_204`600
-custom_proxy_group=🎥 NETFLIX`fallback`(中继.*Pro.*新)`(中继.*沪新)`(中继.*苏新)`(中继.*京新)`http://www.gstatic.com/generate_204`500
+custom_proxy_group=🎥 NETFLIX`fallback`(Light.*新)`(中继.*沪新)`(中继.*苏新)`http://www.gstatic.com/generate_204`500
 custom_proxy_group=📲 电报信息`select`[]🚄 SG自动`(专线.*新)`
-custom_proxy_group=🌍 国外媒体`select`[]🚁 中继自动`[]🚀 专线自动`[]🎯 全球直连`
-custom_proxy_group=Ⓜ️ 微软服务`select`[]🎯 全球直连`[]🚁 中继自动`[]🚀 专线自动`
-custom_proxy_group=🍎 苹果服务`select`[]🎯 全球直连`[]🚁 中继自动`[]🚀 专线自动`
+custom_proxy_group=🌍 国外媒体`select`[]🚁 中继自动`
+custom_proxy_group=🦄 微软苹果`select`[]🎯 全球直连`[]🚁 中继自动`[]🚀 专线自动`
 custom_proxy_group=🐟 漏网之鱼`select`[]🚁 中继自动`[]🚀 专线自动`[]🎯 全球直连`
 custom_proxy_group=🎯 全球直连`select`[]DIRECT
 custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
-custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
 
 # custom_proxy_group=🔰 其他落地`select`(中继((?!港).)*$)`
-
+# custom_proxy_group=🎩 Pro手选`select`(中继.*Pro)`
 
 
 ;设置分组标志位
