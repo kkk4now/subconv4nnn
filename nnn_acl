@@ -22,7 +22,7 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 ;设置分组标志位
 
 
-custom_proxy_group=✈️ 日用`select`(中继.*广新.*03)`(中继.*广港.*02)`(中继.*广新.*01)`(中继.*沪日.*01)`(中继.*沪新.*01)`(中继.*广日.*02)`(中继.*沪港.*03)`
+custom_proxy_group=✈️ 日用`select`(中继.*Pro)`(中继.*广新.*03)`(中继.*广港.*02)`(中继.*沪日.*01)`
 custom_proxy_group=🚀 夜用`select`(专线.*深港.*06)`(专线.*沪新.*01)`(专线.*深港.*03)`(专线.*沪港.*03)`(专线.*沪港.*02)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🎞️ NETFLIX`select`[]✈️ 日用`[]🚀 夜用`
 custom_proxy_group=📲 电报信息`select`[]✈️ 日用`[]🚀 夜用`
