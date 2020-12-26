@@ -21,9 +21,11 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 
 ;设置分组标志位
 
-
-custom_proxy_group=✈️ 日用`select`(中继.*Pro)`(中继.*广新.*03)`(中继.*广港.*02)`(中继.*沪日.*01)`
-custom_proxy_group=🚀 夜用`select`(专线.*深港.*06)`(专线.*沪新.*01)`(专线.*深港.*03)`(专线.*沪港.*03)`(专线.*沪港.*02)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=✈️ 日用`fallback`[]🚄 中继HK`[]🚄 中继SG`[]🚄 中继JP`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🚄 中继HK`select`(中继.*港)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🚄 中继SG`select`(中继.*新)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🚄 中继JP`select`(中继.*日)`http://www.gstatic.com/generate_204`600
+custom_proxy_group=🚀 夜用`select`(专线.*港)`(专线.*新)`http://www.gstatic.com/generate_204`600
 custom_proxy_group=🎞️ NETFLIX`select`[]✈️ 日用`[]🚀 夜用`
 custom_proxy_group=📲 电报信息`select`[]✈️ 日用`[]🚀 夜用`
 custom_proxy_group=🌍 国外媒体`select`[]✈️ 日用`[]🚀 夜用`
@@ -31,6 +33,10 @@ custom_proxy_group=🦄 微软苹果`select`[]✈️ 日用`[]🚀 夜用`[]🎯
 custom_proxy_group=🐟 漏网之鱼`select`[]✈️ 日用`[]🚀 夜用`[]🎯 全球直连`
 custom_proxy_group=🎯 全球直连`select`[]DIRECT
 custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
+
+
+;custom_proxy_group=✈️ 日用`select`(中继.*Pro)`(中继.*广新.*03)`(中继.*广港.*02)`(中继.*沪日.*01)`
+;custom_proxy_group=🚀 夜用`select`(专线.*深港.*06)`(专线.*沪新.*01)`(专线.*深港.*03)`(专线.*沪港.*03)`(专线.*沪港.*02)`http://www.gstatic.com/generate_204`600
 
 ; custom_proxy_group=🔰 其他落地`select`(中继((?!港).)*$)`
 ; custom_proxy_group=🎩 Pro手选`select`(中继.*Pro)`
@@ -66,4 +72,4 @@ rename_node=(.*)三线(.*)@$1$2(三线)
 
 rename_node=((专线|中继|直连|原生转发)\s*)(.*)(🇸🇬|🇰🇷|🇯🇵|🇺🇸|🇭🇰|🇹🇼|🇮🇳|🇬🇧|🇦🇺|🇩🇪)(新|韩|日|美|港|台|印|英|澳|德)(\s*)(.*)@$1$4$3$5$7
 
-exclude_remarks=(韩|台|印|澳|俄|转发)
+exclude_remarks=(韩|台|印|澳|俄|转发|马来)
